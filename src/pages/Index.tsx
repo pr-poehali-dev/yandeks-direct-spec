@@ -58,16 +58,8 @@ export default function Index() {
                   Настройка контекстной рекламы
                   <span className="text-primary block mt-2">Яндекс.Директ</span>
                 </h1>
-                <div className="space-y-3">
-                  <div className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-lg font-semibold text-lg">
-                    Тестовый период ведения 0₽!
-                  </div>
-                  <div className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-lg font-semibold text-lg ml-3">
-                    Экспресс-аудит 0₽!
-                  </div>
-                </div>
                 <p className="text-xl text-muted-foreground">
-                  Проанализирую ваш сайт. Если сайта нет, помогу с разработкой.
+                  Помогаю бизнесу получать целевых клиентов через эффективную настройку рекламных кампаний
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <Button size="lg" onClick={() => scrollToSection('contact')} className="hover-scale">
@@ -110,71 +102,42 @@ export default function Index() {
                 Обо мне
               </h2>
               <div className="space-y-6 text-lg text-muted-foreground">
-                <div className="bg-secondary/50 p-6 rounded-lg space-y-3">
-                  <div className="flex items-start gap-3">
-                    <Icon name="CheckCircle2" size={24} className="text-primary flex-shrink-0 mt-1" />
-                    <div>
-                      <h3 className="font-semibold text-foreground mb-1">Настройка и ведение под ключ</h3>
-                      <p className="text-muted-foreground">Яндекс Директ поиск + РСЯ + мастер кампаний</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <Icon name="CheckCircle2" size={24} className="text-primary flex-shrink-0 mt-1" />
-                    <div>
-                      <h3 className="font-semibold text-foreground mb-1">Настройка Яндекс Метрики</h3>
-                      <p className="text-muted-foreground">Интеграция с системами сквозной аналитики</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <Icon name="CheckCircle2" size={24} className="text-primary flex-shrink-0 mt-1" />
-                    <div>
-                      <h3 className="font-semibold text-foreground mb-1">Помощь в настройке CRM</h3>
-                      <p className="text-muted-foreground">Полная интеграция с вашей системой учета</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <Icon name="CheckCircle2" size={24} className="text-primary flex-shrink-0 mt-1" />
-                    <div>
-                      <h3 className="font-semibold text-foreground mb-1">Опыт в различных нишах</h3>
-                      <p className="text-muted-foreground">От запчастей до продажи недвижимости</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <Icon name="CheckCircle2" size={24} className="text-primary flex-shrink-0 mt-1" />
-                    <div>
-                      <h3 className="font-semibold text-foreground mb-1">Работа с крупными бюджетами</h3>
-                      <p className="text-muted-foreground">Опыт работы с бюджетами свыше 1 млн. руб. Ведение 100+ рекламных кампаний!</p>
-                    </div>
-                  </div>
-                </div>
+                <p>
+                  Я специалист по контекстной рекламе с 5-летним опытом работы в сфере digital-маркетинга. 
+                  За это время успешно запустил более 50 рекламных кампаний для бизнеса различных ниш.
+                </p>
+                <p>
+                  Мой подход основан на глубокой аналитике и постоянной оптимизации. Я не просто настраиваю рекламу, 
+                  а выстраиваю полноценную стратегию привлечения клиентов с прогнозируемым результатом.
+                </p>
                 <div className="grid md:grid-cols-3 gap-6 pt-8">
-                  <div className="bg-white border-2 border-destructive p-6 rounded-lg">
-                    <h3 className="font-bold text-lg mb-4 text-foreground">Помогу устранить проблемы:</h3>
-                    <div className="space-y-3">
-                      <div className="flex items-center gap-3">
-                        <Icon name="XCircle" size={24} className="text-destructive flex-shrink-0" />
-                        <span className="text-foreground font-medium">Нецелевой трафик</span>
-                      </div>
-                      <div className="flex items-center gap-3">
-                        <Icon name="XCircle" size={24} className="text-destructive flex-shrink-0" />
-                        <span className="text-foreground font-medium">Низкая окупаемость рекламы</span>
-                      </div>
-                      <div className="flex items-center gap-3">
-                        <Icon name="XCircle" size={24} className="text-destructive flex-shrink-0" />
-                        <span className="text-foreground font-medium">Отсутствие прозрачной аналитики</span>
-                      </div>
-                      <div className="flex items-center gap-3">
-                        <Icon name="XCircle" size={24} className="text-destructive flex-shrink-0" />
-                        <span className="text-foreground font-medium">Слив бюджета</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="md:col-span-2 bg-primary text-primary-foreground p-8 rounded-lg text-center">
-                    <h3 className="font-bold text-2xl mb-4">Консультация (очно, онлайн) 0₽!</h3>
-                    <p className="text-lg">
-                      Закажите бесплатный экспресс-аудит вашей рекламы и получите рекомендации по увеличению количества лидов!
-                    </p>
-                  </div>
+                  <Card className="hover-scale">
+                    <CardContent className="pt-6 text-center">
+                      <Icon name="Target" size={40} className="mx-auto mb-4 text-primary" />
+                      <h3 className="font-semibold mb-2">Целевой подход</h3>
+                      <p className="text-sm text-muted-foreground">
+                        Привлекаю только заинтересованную аудиторию
+                      </p>
+                    </CardContent>
+                  </Card>
+                  <Card className="hover-scale">
+                    <CardContent className="pt-6 text-center">
+                      <Icon name="TrendingUp" size={40} className="mx-auto mb-4 text-primary" />
+                      <h3 className="font-semibold mb-2">Рост продаж</h3>
+                      <p className="text-sm text-muted-foreground">
+                        Фокус на конверсии и возврате инвестиций
+                      </p>
+                    </CardContent>
+                  </Card>
+                  <Card className="hover-scale">
+                    <CardContent className="pt-6 text-center">
+                      <Icon name="BarChart3" size={40} className="mx-auto mb-4 text-primary" />
+                      <h3 className="font-semibold mb-2">Аналитика</h3>
+                      <p className="text-sm text-muted-foreground">
+                        Детальная отчетность по всем метрикам
+                      </p>
+                    </CardContent>
+                  </Card>
                 </div>
               </div>
             </div>
@@ -345,14 +308,9 @@ export default function Index() {
               <h2 className="text-4xl font-bold text-center mb-4">
                 Свяжитесь со мной
               </h2>
-              <div className="text-center mb-8">
-                <div className="inline-block bg-primary/10 text-primary px-6 py-3 rounded-lg font-bold text-xl mb-4">
-                  Бесплатная консультация 0₽!
-                </div>
-                <p className="text-muted-foreground">
-                  Оставьте заявку и я свяжусь с вами в течение 1 часа
-                </p>
-              </div>
+              <p className="text-center text-muted-foreground mb-12">
+                Оставьте заявку и я свяжусь с вами в течение 1 часа
+              </p>
               <Card>
                 <CardContent className="pt-6">
                   <form className="space-y-6" onSubmit={(e) => {
